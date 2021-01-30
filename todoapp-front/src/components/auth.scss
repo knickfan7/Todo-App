@@ -1,0 +1,29 @@
+$primary-color: #ff4500;
+$secondary-color: #1e90ff;
+
+.todo-form {
+  background-color: $secondary-color;
+  box-shadow: 5px;
+  border: none;
+  margin: auto;
+  height: 400px;
+  width: 600px;
+  text-align: center;
+
+  div {
+    margin-top: 50px;
+    z-index: auto !important;
+    position: relative !important;
+    outline: 0;
+  }
+
+  label {
+    display: block;
+    margin: 0.5em;
+  }
+
+  .btn {
+    flex-grow: 1;
+    margin-top: 1.5em;
+  }
+}

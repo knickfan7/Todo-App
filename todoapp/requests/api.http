@@ -1,0 +1,40 @@
+# requests/api.http
+
+
+POST http://127.0.0.1:8000/api/auth/logins/
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "a"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/auth/register/
+Content-Type: application/json
+
+{
+    "username": "John",
+    "email": "john@example.com",
+    "password": "1234"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/auth/user/
+Authorization: Token a7e986382d811788dcd11059a2c188ed430835f9c7b191ca621e1375d7c56956
+
+###
+
+POST http://127.0.0.1:8000/api/auth/logout/
+Authorization: Token a7e986382d811788dcd11059a2c188ed430835f9c7b191ca621e1375d7c56956
+
+###
+
+GET http://localhost:8000/api/todos/
+Content-Type: application/json
+
+{
+
+}
